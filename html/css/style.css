@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+/*HEADER OG LOGO BILLEDE*/
+
+#header_logo {
+  width: 100%;
+  height: 100px;
+  background-color: #363636;
+  float: left;
+  position: fixed;
+  z-index: 999;
+  display: block;
+}
+
+.header_img {
+/*margin-left: 340px;
+height: 125px;
+position: fixed;
+margin-top: 15px;
+z-index: 999;*/
+
+    min-height: 80px;
+    min-width: 125px;
+    margin: 0 auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 15px;
+
+}
+
+
+/*BANNER HOLDER OG BANNER BILLEDER*/
+#banner_holder {
+  width: 100%;
+  height: 432px;
+  float: left;
+  position: relative;
+  margin-top: 60px;
+}
+
+.banner_img {
+  height: 420px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+/*#menu_holder {
+  background: rgba(54, 54, 54, 0.7);
+  width: 100%;
+  height: 60px;
+  position: absolute;
+}*/
+
+/* Add a black background color with opacity to the top navigation */
+.topnav {
+  background: rgba(54, 54, 54, 0.7);
+  /*  overflow: hidden; */
+  z-index: 800;
+  position: absolute;
+  top: 40px;
+  width: 100%; /*SKAL VÆRE 100%*/
+  font-family: Avenir;
+  color: #eeeeee;
+
+  /*padding: 0 90px;*/
+}
+
+.topnav ul {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+
+  }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background: rgba(50, 108, 166, 0.7);
+
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+
+
+#everything_holder {
+  padding-left: 126px;
+  padding-right: 126px;
+}
+
+/*HOLDER BOKSEN I VENSTRE SIDE*/
+#holder_left {
+  width: 66%;
+  height: 1000px;
+  /*background-color: green;*/
+  float: left;
+  padding-top: 36px;
+  display: block;
+
+}
+
+
+/*HOLDER BOKSEN I HØJRE SIDE*/
+#holder_right {
+  width: 33.3%;
+  height: 1000px;
+  /*background-color: blue;*/
+  float: left;
+  display: block;
+  padding-top: 36px;
+}
+
+
+/*SENESTE NYT HEADLINE*/
+#seneste_nyt{
+  /*background: rgba(236, 236, 236, 0.9);*/
+  /*background: rgba(54, 54, 54);*/
+  background: rgba(110, 110, 110, 1);
+  width: 100%;
+  height: 45px;
+  display: block;
+  text-align: center;
+  font-family: Avenir;
+  font-size: 30px;
+  margin-bottom: 10px;
+  /*color: #363636;*/
+  color: #eeeeee;
+  padding-top: 10px;
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/*HOLDER DE TRE KOLONNER TIL BILLEDER*/
+#picture_holder2 {
+  width: 32.9%;
+  height: 450px;
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+  float: left;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+
+#picture_holder1 {
+  margin-right: 2.5px;
+  width: 32.9%;
+  height: 450px;
+  box-sizing: border-box;
+  float: left;
+}
+
+#picture_holder3 {
+  width: 32.9%;
+  height: 450px;
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+  float: left;
+  margin-left: 2.5px;
+
+}
+/*Filter, which changes pictures into greyscale */
+  #picture_holder1 a > img, #picture_holder2 a > img, #picture_holder3 a > img {
+    filter: grayscale(100%);
+  }
+
+/*Pictures goes back to original color on hover */
+  #picture_holder1 a > img:hover, #picture_holder2 a > img:hover, #picture_holder3 a > img:hover {
+    filter: none;
+}
+
+
+/*SE MERE KNAPPEN*/
+#se_knap {
+  width: 150px;
+  height: 36px;
+  font-family: Avenir;
+  /*background-color: #eeeeee;*/
+  background: rgba(110, 110, 110, 1);
+  /*background: rgba(54, 54, 54, 0.5);*/
+  border: none;
+  display: block;
+  float: right;
+  color: #eeeeee;
+  /*color: #363636;*/
+  font-size: 20px;
+}
+
+#se_mere {
+  width: 100%;
+  float: left;
+}
+
+
+/*TEKST BOKSE TIL HØJRE*/
+#opening_hours, #welcome_motto, #welcome_text {
+  /*background: rgba(236, 236, 236, 0.9)*/
+  /*background: rgba(54, 54, 54, 0.5);*/
+  background: rgba(110, 110, 110, 1);
+  width: 260px;
+  float: left;
+  margin-left: 15px;
+  color: #eeeeee;
+  /*color: #363636;*/
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+#opening_hours {
+  height: 360px;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+  margin-left: 15px;
+}
+
+/*TEKSTEN I ÅBENINGSTIDER*/
+h2 {
+  font-family: Avenir;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+p {
+  font-family: Avenir;
+  text-align: justify;
+}
+
+.p {
+  padding-left: 55px;
+}
+
+
+p#welcome {
+  text-align: center;
+  font-size: 17px;
+  padding-top: 15px;
+  font-weight: 400;
+}
+
+p#motto {
+  text-align: center;
+  padding-top: 5px;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+#welcome_text p {
+  font-size: 14px;
+  word-break: break-all;
+  text-align: center;
+}
+
+
+#welcome_motto {
+  height: 108px;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+}
+
+#welcome_text {
+  height: 324px;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+
+
+
+/*MAP*/
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+
+
+/*FIND OS HEADLINE*/
+#find_os {
+  height: 36px;
+  width: 100%;
+  background: rgba(110, 110, 110, 1);
+  z-index: 999;
+  float: left;
+  position:relative;
+  font-family: Avenir;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  color: #eeeeee;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}

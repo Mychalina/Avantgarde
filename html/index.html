@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+  <title>Avantgarde</title>
+</head>
+
+<header>
+  <div id="header_logo">
+    <a href="PICS/avant.png"></a><img class="header_img" src="PICS/avant.png" style="height:80px;"/>
+  </div>
+
+<div id="banner_holder">
+
+<div id="menu_holder">
+  <nav class="topnav" id="myTopnav">
+    <ul>
+      <a href="">MENU</a>
+      <a href="">MENU</a>
+      <a href="">MENU</a>
+      <a href="">MENU</a>
+      <a href="">MENU</a>
+      <a href="javascript:void(0);" class="icon" onclick="rwdMenuToggle()">&#9776;</a>
+    </ul>
+  </nav>
+</div>
+  <a href="PICS/banner.jpg"></a><img class="banner_img" src="PICS/banner.jpg" />
+</div>
+</header>
+
+
+<body>
+<section id="everything_holder">
+
+
+<section id="holder_left">
+  <div id="seneste_nyt">SENESTE NYT</div>
+
+  <div id="picture_holder1">
+    <a href="PICS/model1.jpg"><img class="img" src="PICS/model1.jpg" style="width:100%;height:200px;"/></a>
+    <a href="PICS/model2.jpg"><img class="img" src="PICS/model2.jpg" style="width:100%;height:200px;"/></a>
+  </div>
+
+  <div id="picture_holder2">
+    <a href="PICS/model3.jpg"><img class="img" src="PICS/model3.jpg" style="width:100%;height:200px;"/></a>
+    <a href="PICS/model5.jpg"><img class="img" src="PICS/model5.jpg" style="width:100%;height:200px;"/></a>
+  </div>
+
+  <div id="picture_holder3">
+    <a href="PICS/model6.jpg"><img class="img" src="PICS/model6.jpg" style="width:100%;height:200px;"/></a>
+    <a href="PICS/model4.jpg"><img class="img" src="PICS/model4.jpg" style="width:100%;height:200px;"/></a>
+  </div>
+
+  <div id="se_mere">
+  <button id="se_knap">SE MERE</button>
+  </div>
+</section>
+
+
+<section id="holder_right">
+
+  <div id="opening_hours">
+    <h2>Åbningstider:</h2></br>
+    <div class="p">
+    <p id="time">Mandag - LUKKET</p></br>
+    <p id="time">Tirsdag - 9.00-17.30</p></br>
+    <p id="time">Onsdag - 9.00-20.00</p></br>
+    <p id="time">Torsdag - 9.00-17.30</p></br>
+    <p id="time">Fredag - 9.00-17.30</p></br>
+    <p id="time">Lørdag - efter aftale</p>
+    </div>
+  </div>
+
+  <div id="welcome_motto">
+    <p id="welcome">
+      VELKOMMEN HOS AVANTGARDE
+    </p>
+    <p id="motto">
+      - MERE TID TIL DIG
+    </p>
+  </div>
+
+  <div id="welcome_text">
+    <p>Avantgarde byder dig velkommen</p>
+    <p>i byens dejligste lokaler til en fri-</p>
+    <p>sørsalon i absolut topklasse.</p></br>
+    <p>Vores team af professionelle frisører</p>
+    <p>er altid klar til at give dig og dit hår</p>
+    <p>den bedste behandling.</p></br>
+    <p>Gør dig klar til at blive forkælet!</p></br>
+    <p style="font-weight:bold;font-size:20px;">På gensyn!</p></br>
+    <p style="font-weight:bold;font-size:15px;">Team Avantgarde</p></br>
+  </div>
+
+</section>
+
+<section id="find_os_her">
+  <div id="find_os">
+    FIND OS HER:
+  </div>
+</section>
+
+<section id="map_holder">
+
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 55.471625, lng:8.437004};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuoMUv6H7mH8Z2PpUMSTKl-Wu9rOQV57U&callback=initMap">
+    </script>
+</section>
+</section>
+
+
+</body>
+</html>
